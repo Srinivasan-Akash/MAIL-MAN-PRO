@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .headline {
+        font-family: 'Paytone One';
+        font-size: 3rem;
+        margin-top: 1em;
+        width: 75%;
+        text-shadow: none;
+        line-height: 1.2;
+        color: #111625;
+        letter-spacing: 2px;
+
+        span {
+            color: #DD8919;
+            text-shadow:
+            1px 1px 0 #000000,
+            5px 2px 0 #000000,
+            5px -1px 0 #000000,
+            -3px -2px 0 #000;
+        }
+    }
+
+    .tagline {
+        font-family: 'budokanRounded';
+        font-size: 1.2rem;
+        margin-top: .5em;
+        width: 60%;
+        color: #111625;
+    }
+
+    .img {
+        width: 90%;
+        margin-top: 1em;
+    }
+}
