@@ -3,7 +3,7 @@
 A SaaS product that provides superpowers to your G-Mail Inbox !! By providing the following features:-
   - Easily create groups or block senders
   - One-click unsubscribe newsletters
-  - Organize emails like entertainment, interview, promo mails etc...
+  - Organize emails like entertainment, interview, promo emails, etc...
   - Automatically delete spam and old emails
   - get push notifications of emails
 
@@ -15,4 +15,5 @@ A SaaS product that provides superpowers to your G-Mail Inbox !! By providing th
   - AppWrite - An Open Source BaaS
   - GMAIL API - Powered By Google
 
-![image](https://github.com/Srinivasan-Akash/MAIL_MAN_PRO/assets/108281031/7757b8bc-987e-45dd-9cd9-fd9f3104db32)
+https://github.com/Srinivasan-Akash/MAIL_MAN_PRO/assets/108281031/e95a9956-b816-4c0c-8b42-8b8e4b04ab53
+
