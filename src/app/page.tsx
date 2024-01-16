@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import Navbar from '@/components/navbar/Navbar'
 import Hero from '@/showcase/hero/Hero'
 import Testimonials from '@/showcase/testimonials/Testimonials'
+import Features from '@/showcase/features/Features'
 
 export default function Home() {
   return (
@@ -13,6 +14,10 @@ export default function Home() {
 
       <div className={styles.testimonials}>
         <Testimonials></Testimonials>
+      </div>
+
+      <div className={styles.features}>
+        <Features></Features>
       </div>
     
     </main>

@@ -1,0 +1,137 @@
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 40%;
+    }
+
+
+    .left {
+
+        h1 {
+            font-family: "Paytone One";
+            font-weight: 500;
+
+        }
+
+        .points {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+            margin-top: 1em;
+        }
+
+        .points .point {
+            background: url('https://media.discordapp.net/attachments/1144663357845147790/1196706633041072259/point.png?ex=65b89ae7&is=65a625e7&hm=56a086676da1c720578ba31cb7b315c2584f595c06c1a9ae28cdf56a430a08a6&=&format=webp&quality=lossless&width=913&height=111');
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-family: 'budokanRounded';
+            display: flex;
+            padding: .5em;
+            align-items: center;
+            width: 90%;
+            border-radius: 5px;
+            font-size: 1.2rem;
+
+            > div {
+                background: #DD8919;
+                border: 2px solid #111625;
+                padding: .5em 1em;
+                border-radius: 5px;
+            }
+
+            p {
+                padding: .5em 1em;
+            }
+        }
+    }
+
+
+
+    .right {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .screen {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            z-index: 2;
+            h1 {
+                font-family: "paytone one";
+                font-weight: 500;
+            }
+
+            .pseudoInputs {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 87%;
+                margin-top: .25em;
+
+                .or {
+                    width: 50%;
+                }
+
+                input {
+                    position: absolute;
+                    font-family: 'budokanRounded';
+                    top: 38%;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    rotate: -1deg;
+                    width: 80%;
+                    left: 5%;
+                    font-size: 1.2rem;
+                }
+
+                .input2 {
+                    top: 28%;
+                    rotate: -1deg;
+                }
+
+                ::placeholder {
+                    color: #111625b6;
+                }
+            }
+
+            .pseudoBtn {
+                position: relative;
+                width: 87%;
+                margin-top: .25em;
+
+                button {
+                    position: absolute;
+                    top: 5%;
+                    width: 100%;
+                    font-family: 'budokanRounded' !important;
+                    height: 100%;
+                    font-size: 1.5rem;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    rotate: -1deg;
+                    left: 0%;
+                }
+
+                .button2 {
+                    top: -5%;
+                }
+            }
+        }
+        
+    }
+}
