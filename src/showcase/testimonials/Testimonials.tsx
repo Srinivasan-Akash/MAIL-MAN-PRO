@@ -60,21 +60,6 @@ export default function Testimonials() {
                                 <p>I liked Clean Email best. Before, I had 17,677 unread emails. Now, it’s a fraction of that.</p>
                             </div>
                         </div>
-                        {/* <div
-                            style={{
-                                backgroundImage: `url(${card.url})`,
-                                backgroundSize: "cover",
-                                backgroundPosition: "center",
-
-                            }}
-                            className={`absolute inset-0 z-0 w-[100%] h-[100%] rounded-[15px] ${styles.thumbContainer}`}
-                        ></div>
-                        <div>
-                            <p className={styles.box}>
-                                <div className="profile"></div>
-                                <span>{card.title}</span>
-                            </p>
-                        </div> */}
                     </SwiperSlide>
                 )
 

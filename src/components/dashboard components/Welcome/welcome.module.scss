@@ -1,0 +1,86 @@
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    height: fit-content;
+
+    .img {
+        width: 95%;
+        margin-top: 1em;
+        margin-top: 2em;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5em;
+
+        .card {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+
+            .logoContainer,
+            .reviewContainer {
+                background: #DD8919;
+                padding: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                border: 5px solid #111625;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            .reviewContainer {
+                padding: .5em;
+                margin-top: .5em;
+                flex-direction: column;
+                gap: .5em;
+
+                >div {
+                    background: #D9D9D9;
+                    width: 100%;
+                    border: 2px solid #111625;
+                    padding: .5em;
+                    border-radius: 8px;
+                    display: flex;
+                    gap: .5em;
+                    align-items: center;
+
+                    h2 {
+                        font-family: 'Paytone One';
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-family: 'budokanRounded';
+                        color: rgba(0, 0, 0, 0.59);
+                        font-size: 1rem;
+                    }
+
+                    .profilePic {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 5px;
+                        background: #111625;
+                    }
+                }
+            }
+        }
+    }
+}
