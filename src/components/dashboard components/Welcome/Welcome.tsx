@@ -1,19 +1,40 @@
+'use client'
 import React from 'react'
 import Navbar from '../../navbar/Navbar'
 import styles from "./welcome.module.scss"
 import Image from 'next/image'
 import { services } from '@/static/services'
+import { useEffect, useState, useRef } from 'react'
 
 export default function Welcome() {
+  const gridContainerRef = useRef(null);
+  const [gridContainerHeight, setGridContainerHeight] = useState(0);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      const height = gridContainerRef.current.offsetHeight;
+      setGridContainerHeight(height);
+      console.log(height)
+    };
+
+    // Call updateHeight initially and on window resize
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('resize', updateHeight);
+    };
+  }, []);
   return (
     <div>
       <Navbar></Navbar>
 
 
       <div className={styles.main}>
-        <img className={styles.offset} src="https://media.discordapp.net/attachments/1144663357845147790/1197188250880704612/Rectangle_372.png?ex=65ba5b71&is=65a7e671&hm=771a313ca47cb41b7d88f9390fe4b25794083a1632469268cf3f2953e4ff0947&=&format=webp&quality=lossless&width=1257&height=544" />
-        <img className={styles.screen} src="https://media.discordapp.net/attachments/1144663357845147790/1197191591757107311/Group_86.png?ex=65ba5e8e&is=65a7e98e&hm=a0f1a51bd2b29321a4f717bbae6645c4135d42a2f10b1556878ddc131740ddbb&=&format=webp&quality=lossless&width=1320&height=544" />
-        <div className={styles.gridContainer}>
+        <img className={styles.offset} src="https://media.discordapp.net/attachments/1144663357845147790/1197188250880704612/Rectangle_372.png?ex=65ba5b71&is=65a7e671&hm=771a313ca47cb41b7d88f9390fe4b25794083a1632469268cf3f2953e4ff0947&=&format=webp&quality=lossless&width=1257&height=544" style={{ height: gridContainerHeight + 100 + 'px' }} />
+        <img className={styles.screen} src="https://media.discordapp.net/attachments/1144663357845147790/1197191591757107311/Group_86.png?ex=65ba5e8e&is=65a7e98e&hm=a0f1a51bd2b29321a4f717bbae6645c4135d42a2f10b1556878ddc131740ddbb&=&format=webp&quality=lossless&width=1320&height=544" style={{ height: gridContainerHeight + 100 + 'px' }}/>
+        <div className={styles.gridContainer} ref={gridContainerRef}>
           {
             services.map(() => {
               return (
