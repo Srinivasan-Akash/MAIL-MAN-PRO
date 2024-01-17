@@ -1,28 +1,60 @@
+// .main {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content: center;
+//     position: relative;
+
+//     height: fit-content;
+
+//     .img {
+//         width: 95%;
+//         margin-top: 1em;
+//         margin-top: 2em;
+//         height: fit-content;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, 0%);
+//     }
+
+// }
+
+
 .main {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-
     height: fit-content;
 
-    .img {
-        width: 95%;
-        margin-top: 1em;
-        margin-top: 2em;
-        height: fit-content;
+    .offset {
         position: absolute;
-        top: 0;
-        left: 0;
-        // top: 50%;
+        top: 120px;
+        left: 61px;
+        width: 95%;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-49%, 0);
+    }
+    
+    .screen {
+        position: absolute;
+        top: 134px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 95%;
     }
 
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+
         gap: .5em;
 
         .card {
